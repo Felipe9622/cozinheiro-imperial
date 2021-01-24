@@ -1,4 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
-    return HttpResponse('Testando o aplicativo')
+
+def home(request):
+    return render(request, 'receitas/home.html')
