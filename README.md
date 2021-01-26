@@ -22,3 +22,8 @@ $ python manage.py runserver
 ```
 Abra o navegador com o endereço informado no console. A página de sucesso de instalação do Django deverá aparecer.
 
+### Deploy no Heroku
+
+instalar o heroku cli
+
+https://devcenter.heroku.com/articles/heroku-cli

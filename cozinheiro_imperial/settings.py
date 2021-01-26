@@ -25,7 +25,8 @@ SECRET_KEY = '9$f_w78)-)#1qxtl!m+icb%kb#chhe75%8(6^p1mi9k9)ruorb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# todo feito para o primeiro deploy deve ser corrigido
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
