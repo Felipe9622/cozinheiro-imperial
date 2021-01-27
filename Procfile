@@ -1,0 +1,1 @@
+web: gunicorn cozinheiro_imperial.wsgi --log-file -
