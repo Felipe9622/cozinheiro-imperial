@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Lista de Receita</h1>
-  {% if receita_list %}
-  <ul>
+<h1>Lista de Receita</h1>
+{% if receita_list %}
+<ul>
     {% for receita in receita_list %}
-      <li>
+    <li>
         <a href="{{ receita.get_absolute_url }}">{{ receita.titulo }}</a>
-      </li>
+    </li>
     {% endfor %}
-  </ul>
-  {% else %}
-    <p>Não existem receitas!!!</p>
-  {% endif %} 
+</ul>
+{% else %}
+<p>Não existem receitas!!!</p>
+{% endif %}
 {% endblock %}

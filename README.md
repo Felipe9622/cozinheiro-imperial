@@ -1,5 +1,5 @@
 # cozinheiro-imperial
-
+[![Build Status](https://travis-ci.org/django-ferrata/cozinheiro-imperial.svg?branch=main)](https://travis-ci.org/django-ferrata/cozinheiro-imperial) 
 
 ### Instalação para ambiente de desenvolvimento
 Requer [Python](https://python.org/) instalado para rodar.
@@ -8,9 +8,9 @@ Instale o Pipenv.
 ```sh
 $ pip install pipenv
 ```
-Instale as dependências com o Pipenv.
+Instale as dependências de desenvolvimento com o Pipenv.
 ```sh
-$ pipenv install
+$ pipenv sync -d
 ```
 Inicie o ambiente virtual.
 ```sh
@@ -24,7 +24,7 @@ Teste subindo o servidor de desenvolvimento.
 ```sh
 $ python manage.py runserver
 ```
-Abra o navegador com o endereço informado no console. A página de sucesso de instalação do Django deverá aparecer.
+Abra o navegador com o endereço informado no console. O app devera abrir 
 
 ### Bibliotecas e framework utilizados
 
@@ -34,4 +34,8 @@ Abra o navegador com o endereço informado no console. A página de sucesso de i
 
 [whitenoise](http://whitenoise.evans.io/en/stable/index.html) - Serve os arquivos estáticos sem a necessidade de um servidor externo, mantém contido na própria aplicação. 
 
+[flake8](https://flake8.pycqa.org/en/latest/manpage.html) - Usado para fazer o lint do codigo.
 
+[travis-ci](https://travis-ci.org/) - Usado para integraçao continua
+
+[pyup]()
