@@ -38,4 +38,3 @@ Abra o navegador com o endereço informado no console. O app devera abrir
 
 [travis-ci](https://travis-ci.org/) - Usado para integraçao continua
 
-[pyup]()
