@@ -80,10 +80,16 @@ WSGI_APPLICATION = 'cozinheiro_imperial.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-parse_database = partial(dj_database_url.parse, conn_max_age=600)
-
 DATABASES = {
-    'default': config('DATABASE_URL', cast=parse_database)
+    "default": {
+        "ENGINE": config('DATABASE_ENGINE'),
+        "HOST": config('DATABASE_HOST'),
+        "NAME": config('DATABASE_DB'),
+        "USER": config('DATABASE_USER'),
+        "PASSWORD": config('DATABASE_PASS'),
+        "PORT": config('DATABASE_PORT', cast=int),
+        "CONN_MAX_AGE": config('DATABASE_CONN_MAX_AGE', cast=int)
+    }
 }
 
 # Password validation
