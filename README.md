@@ -38,3 +38,8 @@ Abra o navegador com o endereço informado no console. O app devera abrir
 
 [travis-ci](https://travis-ci.org/) - Usado para integraçao continua
 
+[python-decouple]()
+
+[psycopg2-binary]()
+
+[dj-database-url](https://github.com/jacobian/dj-database-url)
